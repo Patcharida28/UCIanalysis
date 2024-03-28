@@ -8,8 +8,6 @@ dt=pd.read_csv('./data/Raisin.csv')
 
 st.subheader("ข้อมูลRaisin")
 st.write(dt.head(10))
-#Index(['sepal.length', 'sepal.width', 'petal.length', 'petal.width',
-#       'variety'],
 
 st.subheader("ข้อมูลRaisin")
 st.write('ผลรวม')
