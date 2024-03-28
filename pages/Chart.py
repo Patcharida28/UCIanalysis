@@ -17,6 +17,13 @@ cl2.write(dt['ConvexArea'].sum())
 cl3.write(dt['Extent'].sum())
 cl4.write(dt['Perimeter'].sum())
 
+st.write('ค่าเฉลี่ย')
+cl11,cl12,cl13,cl14=st.columns(4)
+cl11.write(dt['Area'].mean())
+cl12.write(dt['ConvexArea'].mean())
+cl13.write(dt['Extent'].mean())
+cl14.write(dt['Perimeter'].mean())
+
 st.write('ค่ามากที่สุด')
 cl21,cl22,cl23,cl24=st.columns(4)
 cl21.write(dt['Area'].max())
