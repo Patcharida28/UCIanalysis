@@ -4,8 +4,6 @@ import pandas as pd
 #st.title("Website Developing using Python")
 #st.header("🌶️Website Developing using Python🌶️")
 
-st.subheader("🍔Patcharida Choomchoo🍔")
-
 dt=pd.read_csv('./data/Raisin.csv')
 
 st.subheader("🍖🍖ข้อมูลสถิติของ Raisin🍖🍖")

@@ -7,9 +7,6 @@ import pandas as pd
 dt=pd.read_csv('./data/Raisin.csv')
 
 st.subheader("ข้อมูลRaisin")
-st.write(dt.head(100))
-
-st.subheader("ข้อมูลRaisin")
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4=st.columns(4)
 cl1.write(dt['Area'].sum())
