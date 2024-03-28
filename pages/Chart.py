@@ -19,7 +19,7 @@ st_lottie(lottie_hello,key="hello")
 
 html_1 = """
 <div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>กราฟแสดงข้อมูลขนิดของลูกเกด</h5></center>
+<center><h5>🌸กราฟแสดงข้อมูลภาพพันธุ์ของลูกเกด🌸</h5></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
@@ -27,7 +27,7 @@ st.markdown("")
 
 dt=pd.read_csv('./data/Raisin.csv')
 
-st.subheader("ข้อมูลRaisin")
+st.subheader("🌽ข้อมูลภาพพันธุ์ของลูกเกด🌽")
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4=st.columns(4)
 cl1.write(dt['Area'].sum())
