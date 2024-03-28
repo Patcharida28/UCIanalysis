@@ -1,8 +1,29 @@
 import streamlit as st
 import pandas as pd
+from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
+import requests
 
 #st.title("Website Developing using Python")
 #st.header("🌶️Website Developing using Python🌶️")
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_url_hello = "https://lottie.host/6e13c30e-2226-4ab3-b6c0-33f4ea2739aa/aFUknM9rJg.json"
+lottie_hello = load_lottieurl(lottie_url_hello)
+st_lottie(lottie_hello,key="hello")
+
+html_1 = """
+<div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>กราฟแสดงข้อมูลขนิดของลูกเกด</h5></center>
+</div>
+"""
+st.markdown(html_1, unsafe_allow_html=True)
+st.markdown("")
 
 dt=pd.read_csv('./data/Raisin.csv')
 
