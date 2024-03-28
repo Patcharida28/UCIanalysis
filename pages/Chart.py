@@ -17,6 +17,13 @@ cl2.write(dt['ConvexArea'].sum())
 cl3.write(dt['Extent'].sum())
 cl4.write(dt['Perimeter'].sum())
 
+st.write('ค่ามากที่สุด')
+cl21,cl22,cl23,cl24=st.columns(4)
+cl21.write(dt['Area'].max())
+cl22.write(dt['ConvexArea'].max())
+cl23.write(dt['Extent'].max())
+cl24.write(dt['Perimeter'].max())
+
 import numpy as np
 import matplotlib.pyplot as plt
 labels = ['Men', 'Women','','']
