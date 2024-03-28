@@ -30,6 +30,15 @@ cl12.write(dt['ConvexArea'].mean())
 cl13.write(dt['Extent'].mean())
 cl14.write(dt['Perimeter'].mean())
 
+st.write("Area_Chart")
+a=dt['Area'].mean()
+b=dt['ConvexArea'].mean()
+c=dt['Extent'].mean()
+d=dt['Perimeter'].mean()
+dxt=[a,b,c,d]
+cxx=pd.DataFrame(dxt,index=["Area", "ConvexArea", "Extent","Perimeter"])
+st.area_chart(cxx)
+
 st.write('ค่ามากที่สุด')
 cl21,cl22,cl23,cl24=st.columns(4)
 cl21.write(dt['Area'].max())
