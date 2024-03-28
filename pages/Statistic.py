@@ -7,7 +7,7 @@ import pandas as pd
 dt=pd.read_csv('./data/Raisin.csv')
 
 st.subheader("🍖🍖ข้อมูลสถิติของ Raisin🍖🍖")
-st.write(dt.head(10))
+st.write(dt.head(100))
 
 #st.subheader("สถิติข้อมูลRaisin")
 #st.write('ผลรวม')
