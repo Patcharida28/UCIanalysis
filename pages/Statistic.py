@@ -7,7 +7,7 @@ import pandas as pd
 dt=pd.read_csv('./data/Raisin.csv')
 
 st.subheader("🍖🍖สถิติข้อมูลแสดงภาพพันธุ์ของลูกเกด🍖🍖")
-st.write(dt.head(100))
+st.write(dt.head(50))
 
 #st.subheader("สถิติข้อมูลRaisin")
 #st.write('ผลรวม')
