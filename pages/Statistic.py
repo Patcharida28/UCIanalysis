@@ -8,7 +8,7 @@ st.subheader("🍔Patcharida Choomchoo🍔")
 
 dt=pd.read_csv('./data/Raisin.csv')
 
-st.subheader("ข้อมูลRaisin")
+st.subheader("🍖🍖ข้อมูลสถิติของ Raisin🍖🍖")
 st.write(dt.head(10))
 
 #st.subheader("สถิติข้อมูลRaisin")
