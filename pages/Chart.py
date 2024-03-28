@@ -11,7 +11,7 @@ st.write(dt.head(10))
 #Index(['sepal.length', 'sepal.width', 'petal.length', 'petal.width',
 #       'variety'],
 
-st.subheader("สถิติข้อมูลRaisin")
+st.subheader("ข้อมูลRaisin")
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4=st.columns(4)
 cl1.write(dt['Area'].sum())
