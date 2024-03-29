@@ -34,7 +34,9 @@ if st.button("พยากรณ์"):
     elif y_predict2=='':
         st.image("./pic/Virginica.jpg")
         st.write(y_predict2)
+    st.button("ไม่พยากรณ์")
 else:
+    st.button("ไม่พยากรณ์")
     st.write(y_predict2)
 y_predict=dtree.predict(x_test)   
 score = accuracy_score(y_test, y_predict)  
