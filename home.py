@@ -8,8 +8,8 @@ def load_lottieurl(url: str):
     if r.status_code != 200:
         return None
     return r.json()
-
-st.subheader("การประยุกต์ใช้งาน Machine learning บนเว็บ By นางสาวพัชริดา ชุ่มชู สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยีมหาวิทยาลัยราชภัฏนครปฐม")
+st.title("การประยุกต์ใช้งาน Machine learning บนเว็บ")
+st.subheader(" By นางสาวพัชริดา ชุ่มชู สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยีมหาวิทยาลัยราชภัฏนครปฐม")
 
 lottie_url_hello = "https://lottie.host/a4a8e206-d582-4211-9292-e6dbdaf428b1/NbkG79OEyW.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
