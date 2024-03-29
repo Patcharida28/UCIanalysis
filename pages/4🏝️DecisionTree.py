@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-cl1,cl2,cl3.columns(3)
+cl1,cl2,cl=st.columns(3)
 with cl1:
     st.image("./pic/Setosa.jpg")
 with cl2:
