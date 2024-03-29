@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 
 #st.image('./pic/Breast.jpg') # ข้อมูลรูปภาพตัวเอง
 col1, col2 = st.columns(2)
@@ -19,7 +19,7 @@ st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
 
 import pandas as pd
-dt=pd.read_csv('./data/breastcancer2.csv')
+dt=pd.read_csv('./data/breastcancer.csv')
 st.write(dt.head(10))
 dt1 = dt['ClumpThickness'].mean()
 dt2 = dt['UniformityofCellSize'].mean()
@@ -63,12 +63,12 @@ import numpy as np
 if st.button("ทำนายผล"):
    # ทำนาย
    #dt = pd.read_csv("./data/breastcancer.csv") 
-    cols=['ClumpThickness', 'UniformityofCellSize',
+   cols=['ClumpThickness', 'UniformityofCellSize',
        'UniformityofCellShape', 'MarginalAdhesion', 'SingleEpithelialCellSize',
        'BareNuclei', 'BlandChromatin', 'NormalNucleoli', 'Mitoses']
 
    X = dt[cols]
-   y = dt['Class   ']  
+   y = dt['Class   '] 
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
