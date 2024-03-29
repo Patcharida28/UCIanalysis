@@ -37,7 +37,7 @@ if st.button("พยากรณ์"):
     st.button("ไม่พยากรณ์")
 else:
     st.button("ไม่พยากรณ์")
-    st.write(y_predict2)
+    #st.write(y_predict2)
 y_predict=dtree.predict(x_test)   
 score = accuracy_score(y_test, y_predict)  
 st.write(f'ความแม่นยำในการพยากรณ์{(score*100)} %')  
