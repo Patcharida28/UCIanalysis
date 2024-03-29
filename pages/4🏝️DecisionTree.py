@@ -29,7 +29,10 @@ if st.button("พยากรณ์"):
         st.image("./pic/Setosa.jpg")
         st.write(y_predict2)
     elif y_predict2=="":
-        st.image('')
+        st.image("./pic/Versicolor.jpg")
+        st.write(y_predict2)
+    elif y_predict2=='':
+        st.image("./pic/Virginica.jpg")
         st.write(y_predict2)
 else:
     st.write(y_predict2)
